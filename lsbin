@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# Before （カレントを移動してしまう）
+#PATH_DIR=$(cd $(dirname $0); pwd)
+#cd $PATH_DIR
+#ls | grep -v README | grep -v LICENSE
+
+LS_DIR=$(cd $(dirname $0); ls | grep -v README | grep -v LICENSE)
+
+echo $LS_DIR
